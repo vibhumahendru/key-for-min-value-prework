@@ -5,8 +5,14 @@ def key_for_min_value(name_hash)
   if name_hash == {}
     return nil
   end
-  
+  low = 1000000
+  theKe = x
   name_hash.each do |keey, val|
+    if val < low
+      low = val
+      theKe = keey
+    end
   
-  
+end
+theKe
 end
