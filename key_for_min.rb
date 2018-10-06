@@ -7,12 +7,12 @@ def key_for_min_value(name_hash)
     return nil
   end
   
-  name_hash.each do |key, value|
+  name_hash.each do |keey, value|
   mini = 1000000000
   
   if value< mini
     mini = value
-    theKey = key
+    theKey = keey
   end
 end
   theKey
